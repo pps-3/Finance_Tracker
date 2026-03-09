@@ -28,3 +28,4 @@ class TransactionSerializer(serializers.ModelSerializer):
     def create(self, validated_data):
         transaction = Transaction.objects.create(**validated_data)
         return transaction
+    
